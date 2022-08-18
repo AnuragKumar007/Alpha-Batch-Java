@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Prime {
     public static boolean isPrime(int a) {
         boolean isPrime = true;
-        for(int i=2;i<=a-1;i++){
+        for(int i=2;i<=Math.sqrt(a);i++){
             if(a%i==0)
             isPrime = false;
             break;
