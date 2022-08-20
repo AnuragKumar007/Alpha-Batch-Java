@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class swap{
 
-    public static void swaping(int a, int b){
+    public static void swaping(int a, int b) // Parameter
+    {
         int temp =a;
         a=b;
         b=temp;
@@ -12,6 +13,6 @@ public class swap{
 
         int a= sc.nextInt();
         int b=sc.nextInt();
-        swaping(a,b);
+        swaping(a,b); //arguments
     }
 }
