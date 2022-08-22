@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class BinaryToDecimal {
     public static int Binary(int n){
@@ -19,3 +20,4 @@ public class BinaryToDecimal {
         System.out.println(Binary(n));
     }
 }
+
