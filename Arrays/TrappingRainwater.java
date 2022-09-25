@@ -1,6 +1,6 @@
 public class TrappingRainwater {
     //Time Complexity - O(n)
-    public static int trappedRainwater(int height[]){
+    public static long trappedRainwater(int height[]){
         int n = height.length;
         int waterLevel =0;
         int trappedWater =0;
@@ -28,7 +28,7 @@ public class TrappingRainwater {
     }
     
     public static void main(String[] args) {
-        int height[] ={4,2,0,6,3,2,5};
+        int height[] ={3,0,0,2,0,4};
         System.out.println("Trapped Rainwater = "+ trappedRainwater(height));
     }
 }
