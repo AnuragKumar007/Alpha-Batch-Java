@@ -1,0 +1,287 @@
+/* css reset */
+
+*{
+    margin: 0px;
+    padding: 0%;
+    font-size: 20px;
+}
+/* css variables */
+/* :root{
+    --navbar-height: 59px;
+} */
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    /* flex-direction: row; */
+    /* border: 2px solid red; */
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+/* Navigation Bar Logo and image */
+#logo {
+    margin: 13px 45px;
+    /* border: 2px solid blue; */
+    align-items: flex-start;
+}
+#logo img {
+    height: 64px;
+    width: 170px;
+    /* box-shadow: 3px 3px 5px 2px #812f14; */
+}
+
+/* Navigation Bar List Items */
+#navbar::before {
+    content: "";
+    background-color:#000000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: .4;
+}
+#navigation{
+    display: block;
+    width: 730px;
+    margin: auto;
+}
+#navigation ul {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+}
+#navigation ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 33px 10px;
+    font-size: 1.3rem;
+}
+#navigation ul li a {
+    padding: 6px 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+   border-radius: 25px;
+   font-weight: 700; 
+    
+}
+#navigation ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 3px 3px 5px 1px #812f14;
+    font-size: 1.1rem;
+    
+}
+
+ /* Navigation Bar Right Buttons */
+
+.buttons{
+    /* border: 2px solid red; */
+    display: inline-block;
+    right: 20px;
+    top: 20px;
+    margin: 30px 45px;
+    padding-top: 6px;
+}
+.btns{
+    margin: 0px 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+.btns:hover{
+    cursor: pointer;
+    animation-name:btn1 ;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+}
+@keyframes btn1 {
+
+    50%{
+        transform: scale(1.3);
+    }
+}
+
+
+
+/* home Section css */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 200px;
+    height: 250px;
+}
+.home::before{
+    content: "";
+    background: url(./bg2.jpg) no-repeat center center/cover;
+    height: 360px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+.home h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.home p{
+    
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(126, 124, 124);
+    font-size: 1.1rem;
+    /* font-weight: 600; */
+    font-family: 'Ubuntu', sans-serif;
+
+    
+}
+
+
+/*services section  */
+#services{
+    margin: 30px;
+    display: flex;
+    
+}
+#services .box{
+    /* border: 2px solid red; */
+    padding: 0px 15px;
+    margin: 0px 5px;
+}
+#services .box img{
+    /* border: 2px solid green; */
+    width: 259px;
+    height: 207px;
+    display: block;
+    margin: auto;
+}
+#services .box h2{
+    padding: 2px;
+}
+#services .box p{
+    font-family: sans-serif;
+}
+
+/* Download or App Section  */
+.Appcontainer{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 288px;
+}
+.Appcontainer #centergplayimage{
+    margin: 23px;
+    width: 145px;
+    height: 59px;
+    animation-name: googleplayimg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes googleplayimg{
+    0%{}
+    50%{transform: scale(1.15);}
+    100%{}
+}
+
+.Appcontainer h3{
+    display: block;
+    margin: 10px;
+    height: 57px;
+    width: 750px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Appcontainer p{
+    font-size: 1.1rem;
+    text-align: center;
+    width: 650px;
+    font-family: sans-serif;
+
+}
+
+/* Contact Section  */
+#contactus{
+    position: relative;
+}
+#contactus::before{
+    content: "";
+    position:absolute;
+    background: url(./bg.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    opacity: .4;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contact-box input,
+.contact-box textarea{
+    margin: 5px;
+    display: block;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 7px;
+
+}
+.contact-box .form-group{
+    font-family: monospace;
+    font-weight: 700;
+}
+
+/* Footer Section  */
+footer{
+    background-color: black;
+    color: white;
+    height: 25px;
+    
+}
+
+
+/* utility clases */
+.h-primary{
+    font-size: 2rem;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    /* border: 2px solid rebeccapurple; */
+    text-align: center;
+
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.btn{
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #e79b6a;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
