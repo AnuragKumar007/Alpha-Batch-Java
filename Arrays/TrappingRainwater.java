@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class TrappingRainwater {
     //Time Complexity - O(n)
     public static long trappedRainwater(int height[]){
@@ -28,7 +29,13 @@ public class TrappingRainwater {
     }
     
     public static void main(String[] args) {
-        int height[] ={3,0,0,2,0,4};
+        // int height[] ={3,0,0,2,0,4};
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int height[] = new int[n];
+        for(int i=0;i<n;i++){
+            height[i]= sc.nextInt();
+        }
         System.out.println("Trapped Rainwater = "+ trappedRainwater(height));
     }
 }

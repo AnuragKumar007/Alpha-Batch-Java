@@ -12,7 +12,7 @@ public class Binary {
                 start = mid+1;
             }
             else {
-                start = mid-1;
+                end = mid-1;
             }
         }
         return -1;
@@ -22,10 +22,10 @@ public class Binary {
         Scanner sc = new Scanner(System.in);
 
         //Input
-        int array[]= new int [5];
+        int arr[]= new int [5];
         System.out.println("Enter 5 Element of the array");
-        for(int i=0;i<array.length;i++){
-            array[i]= sc.nextInt();
+        for(int i=0;i<arr.length;i++){
+            arr[i]= sc.nextInt();
         }
         int key = 10;
         System.out.println("Element found on - "+ BinarySearch(arr, key));
