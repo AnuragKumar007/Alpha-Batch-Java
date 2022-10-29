@@ -8,6 +8,8 @@
 
 public class PractiseQue2 {
     
+    // 1st method
+
     // public static void convert(String s, int idx, String str){
     //     //base
     //     if(idx== s.length()){
@@ -51,13 +53,17 @@ public class PractiseQue2 {
     //     convert(s, idx+1, str);
     // }
 
-    //or
+    //2nd Method
 
     static String digits[] ={"zero","one ","two","three "," four" ,"five " ,"six ","seven","eight","nine"};
+
+
     public static void printDigits (int number){
+        //base
         if (number== 0) {
             return;
         }
+        //kaam
         int lastDigit = number%10;
         printDigits (number/ 10);
         System.out.print(digits[lastDigit] +" ");
