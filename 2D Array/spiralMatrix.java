@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class spiralMatrix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Elements");
         int n = sc.nextInt();
         int m = sc.nextInt();
         int matrix[][]= new int [n][m];
